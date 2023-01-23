@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace CsvHelperAndJsonNET
 {
+    [Serializable]
     public class Contact
     {
         public string FirstName { get; set; }

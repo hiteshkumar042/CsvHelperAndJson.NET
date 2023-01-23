@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CsvHelperAndJsonNET
 {
@@ -12,7 +7,7 @@ namespace CsvHelperAndJsonNET
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to CSVHelper & JSON.NET Library.");
-            Console.WriteLine("\n1. Read from CSV and Copy to CSV\n2. Read from CSV and Copy to JSON");
+            Console.WriteLine("\n1. Read from CSV and Copy to CSV\n2. Read from CSV and Copy to JSON.\n3. Read from JSON and Copy to CSV.\n");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -21,6 +16,9 @@ namespace CsvHelperAndJsonNET
                     break;
                 case 2:
                     CSVToJSONOperation.CSVToJSONFn();
+                    break;
+                case 3:
+                    JSONToCSVOperation.JSONToCSVOperationFn();
                     break;
                 default:
                     Console.WriteLine("Invalid Option.");

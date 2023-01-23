@@ -74,6 +74,7 @@
     <Compile Include="Contact.cs" />
     <Compile Include="CSVtoCSVOperation.cs" />
     <Compile Include="CSVToJSONOperation.cs" />
+    <Compile Include="JSONToCSVOperation.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
