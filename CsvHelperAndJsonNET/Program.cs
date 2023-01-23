@@ -12,7 +12,7 @@ namespace CsvHelperAndJsonNET
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to CSVHelper & JSON.NET Library.");
-            Console.WriteLine("\n1. CSV Helper\n");
+            Console.WriteLine("\n1. Read from CSV and Copy to CSV\n2. Read from CSV and Copy to JSON");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -20,7 +20,10 @@ namespace CsvHelperAndJsonNET
                     CSVtoCSVOperation.ImplimentCSVHandling();
                     break;
                 case 2:
-                    Console.WriteLine();
+                    CSVToJSONOperation.CSVToJSONFn();
+                    break;
+                default:
+                    Console.WriteLine("Invalid Option.");
                     break;
             }
             Console.ReadLine();
